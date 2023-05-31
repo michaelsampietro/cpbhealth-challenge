@@ -12,8 +12,8 @@ You will be graded on the exhaustiveness and quality of your unit tests, the dep
 Basically, I focused on trying to separate the concerns a little bit. I split the logic to read a candidate key into a new function (`getCandidatePartitionKey`), so the main function becomes easier to read and maintain.
 
 I worked on two things:
-1- Created a new function (getCandidatePartitionKey) to read the value of the candidate key
-2- The main function now deals only with returning the candidate key, making it easier to read.
+- Created a new function (getCandidatePartitionKey) to read the value of the candidate key
+- The main function now deals only with returning the candidate key, making it easier to read.
 
 I also tried to improve the function readability a little bit by trying to remove nested ifs and elses statements. Now, whenever a return criteria is met, the function returns the value, instead of reasigning the value to a variable to return it at the end.
 
