@@ -17,12 +17,13 @@ You will be graded on the level of detail in each ticket, the clarity of the exe
 
 ## Your Breakdown Here
 
-## Ticket 1 - Add a new field to store a custom agent id on Agents table and update our models/schemas
+## Ticket 1 - Add a new field to store a custom agent id on `Agents` table and update our models/schemas
 #### Description:
-A new field must be added in the `Agent` table in our database to display that information in the reports generated.
+A new field must be added in the `Agents` table in our database to display that information in the reports generated.
 
 #### Implementation details:
-Basically, we'll need to have a new field on the table Agents named `customAgentId` with type VARCHAR(MAX) (I'm assuming we use some kind of SQL database) that will be used to store a custom agent id.
+- Basically, we'll need to have a new field on the table `Agents` named `customAgentId` that will be used to store a custom agent id.
+- Since we can't be sure about the type of this id (uuid, numeric, guid, string, etc) create the column with type `VARCHAR(MAX)` (I'm assuming we use some kind of SQL database).
 
 #### Important reminders:
 - Please, update our documentation/schemas/diagrams with the new field.
