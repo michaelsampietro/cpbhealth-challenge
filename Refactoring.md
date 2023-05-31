@@ -15,6 +15,6 @@ I worked on two things:
 - Created a new function (getCandidatePartitionKey) to read the value of the candidate key
 - The main function now deals only with returning the candidate key, making it easier to read.
 
-I also tried to improve the function readability a little bit by trying to remove nested ifs and elses statements. Now, whenever a return criteria is met, the function returns the value, instead of reasigning the value to a variable to return it at the end.
+I also tried to improve the function readability a little bit by trying to remove nested ifs and elses statements. Now, whenever a return criteria is met the function returns the value, instead of reasigning the value to a variable to return it at the end.
 
 I tried to avoid "obvious" comments in the function and I think my test suits cover all the scenarios.
