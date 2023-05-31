@@ -9,6 +9,12 @@ You've been asked to refactor the function `deterministicPartitionKey` in [`dpk.
 You will be graded on the exhaustiveness and quality of your unit tests, the depth of your refactor, and the level of insight into your thought process provided by the written explanation.
 
 ## Your Explanation Here
-BasicaMylly, I focused on trying to separate the concerns a little bit. I split the logic to read a candidate key into a new function (`getCandidatePartitionKey`), so it becomes easier to access, read and maintain.
+Basically, I focused on trying to separate the concerns a little bit. I split the logic to read a candidate key into a new function (`getCandidatePartitionKey`), so the main function becomes easier to read and maintain.
 
-I tried to improve the functions readability a little bit by trying removing nested ifs/elses. Now, whenever a return criteria is met, I return the value in a more "direct" way, instead of reasigning the variables a new value whenever needed to return it at the end.
+I worked on two things:
+1- Created a new function (getCandidatePartitionKey) to read the value of the candidate key
+2- The main function now deals only with returning the candidate key, making it easier to read.
+
+I also tried to improve the function readability a little bit by trying to remove nested ifs and elses statements. Now, whenever a return criteria is met, the function returns the value, instead of reasigning the value to a variable to return it at the end.
+
+I tried to avoid "obvious" comments in the function and I think my test suits cover all the scenarios.
